@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.LinkedList;
 
 public class MazeSolver {
@@ -16,10 +17,9 @@ public class MazeSolver {
 
 	static LinkedList<Position> path = new LinkedList<Position>();
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws IOException {
 		Position p = new Position(4, 8);
 		path.push(p);
-
 		
 		while (true) {
 			int y = path.peek().y;
